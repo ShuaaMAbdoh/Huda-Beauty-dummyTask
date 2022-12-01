@@ -16,7 +16,7 @@ public class SimpleTask {
 
 	public static void main(String[] args) {
   	  readExcel readObj = new readExcel();
-  	  String filePath = "C:\\Users\\ShuaaAbdoh\\eclipse-workspace\\Huda Beauty-Selenium task\\src";
+  	  String filePath = "./Files";
   	  
 		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -32,10 +32,10 @@ public class SimpleTask {
   			//System.out.println("length:"+dataSheet.length);
   			//System.out.println("data in sheet: "+dataSheet[0]);
   			
-  			System.out.println(dataFromSite.equals(dataSheet[0]));
-  			System.out.println(dataFromSite.equals(dataSheet[1]));
-  			System.out.println(dataFromSite.equals(dataSheet[2]));
-  			System.out.println(dataFromSite.equals(dataSheet[3]));
+  			System.out.println("Case 1: "+dataFromSite.equals(dataSheet[0]));
+  			System.out.println("Case 2: "+dataFromSite.equals(dataSheet[1]));
+  			System.out.println("Case 3: "+dataFromSite.equals(dataSheet[2]));
+  			System.out.println("Case 4: "+dataFromSite.equals(dataSheet[3]));
   			
   		}
   	} 
